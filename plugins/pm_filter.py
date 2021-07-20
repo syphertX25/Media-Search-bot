@@ -78,7 +78,7 @@ async def filter(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b>Here is What I Found In For {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -94,7 +94,7 @@ async def filter(client, message):
         )
 
         await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b>Here is What I Found For {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -133,7 +133,7 @@ async def group(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b>Here is What I Found For {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -149,7 +149,7 @@ async def group(client, message):
         )
 
         await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
+                f"<b>Here is What I Found For {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
@@ -255,11 +255,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-                    InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+                    InlineKeyboardButton('Update Channel', url='https://t.me/moviestrix')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/TargetX25'>TargetX25 ✨</a>\nUpdates Channel : <a href='https://t.me/moviestrix'>Moviestrix ❣️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -272,8 +271,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('Web Series Channel', url='https://t.me/gtwebseries'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/moviestrix')
                     ]
                     ]
                 
@@ -296,8 +295,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('Web Series Channel', url='https://t.me/gtwebseries'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/moviestrix')
                     ]
                     ]
                 
@@ -313,4 +312,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
+        await query.answer("More fun👀",show_alert=True)
