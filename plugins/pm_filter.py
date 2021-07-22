@@ -113,7 +113,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=file_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
         else:
             return
@@ -258,7 +258,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Update Channel', url='https://t.me/moviestrix')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/TargetX25'>TargetX25 ✨</a>\nUpdates Channel : <a href='https://t.me/moviestrix'>Moviestrix ❣️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Updates Channel : <a href='https://t.me/moviestrix'>Moviestrix ❣️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
