@@ -184,4 +184,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Updates Channel', url='https://t.me/moviestrix')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/TargetX25'>TargetX25 ✨</a>\nUpdates Channel : <a href='https://t.me/moviestrix'>Moviestrix ❣️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Updates Channel : <a href='https://t.me/moviestrix'>Moviestrix ❣️</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
